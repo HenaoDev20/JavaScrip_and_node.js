@@ -1,0 +1,47 @@
+//Proyecto: Simulador de Registro y Evaluación de Usuario
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Usuario</title>
+</head>
+<body>
+  <h2>Formulario de Datos</h2>
+  
+  
+  <script>
+    const nombre=prompt("Ingrese su nombre: ")
+    const edad =prompt("Ingrese la edad: ")
+
+function edades(edad) {
+  if (edad >= 60 && edad <= 70) {
+    console.log("Edad de oro");
+  } else if (edad >= 18) {
+    console.log("Usuario mayor de edad...");
+  } else {
+    console.log("Usuario menor de edad");
+  }
+}
+
+
+function nombresMasLetras(nombre) {
+    console.log("Nombre:", nombre);
+    console.log("Cantidad de letras:", nombre.length);
+
+    if (nombre.length > 3) {
+        console.log("Nombre con más de tres letras");
+    } else {
+        console.log("Nombre con tres letras o menos");
+    }
+}
+
+  edades(edad)
+  nombresMasLetras(nombre)
+  //nombresMasLetras()
+    
+  </script>
+  
+</body>
+</html>
+
